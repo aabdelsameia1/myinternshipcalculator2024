@@ -1,11 +1,20 @@
 language: python
+
 python:
 - '3.8'
+
 install:
 - pip install -r requirements.txt
 - pip install twine
+
 script:
 - python -m unittest discover tests
+
+branches:
+  only:
+  - master
+  - /^v\d+\.\d+$/
+
 deploy:
   provider: pypi
   username: __token__
