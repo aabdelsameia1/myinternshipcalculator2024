@@ -1,25 +1,23 @@
 language: python
+
 python:
-  - "3.8"
+- '3.8'
 
-# Specify the operating system as macOS
-os: osx
-osx_image: xcode12.2  # You can specify the macOS version or Xcode version
+before_install:
+- python --version
+- pip install -U pip
 
-# Install dependencies
 install:
-  - pip install -r requirements.txt
-  - pip install twine
+- pip install -r requirements.txt
+- pip install twine
 
-# Run tests
 script:
-  - python -m unittest discover tests
+- python -m unittest discover tests
 
-# Specify branches and tags to build
-branches:
-  only:
-    - master
-    - /^v\d+\.\d+$/
+#branches:
+#  only:
+#  - master
+#  - /^v\d+\.\d+$/
 
 deploy:
   provider: pypi
@@ -28,5 +26,4 @@ deploy:
     secure: FW8NS2pCUEi46Ckgf9z9PDxmdbk7YrZ4Bk9qWWfyqMnmWFI3R54nxmRSg9YE6IcUHzaM6iWPQVSj+8RUzkESVVv6g2HGrioKiCFFjFerlw5erELxGHuc87ExUHFvIBNRzy5NGRHWHFrhNteacIIedIT2Fuj+4m4k1ZZ8SgX41ecEEsP918GjO3ypnM4WrcsnDJd57iiJTYxAvhOq8byOzN31gJ/J6PwGw77ErxVDrgtNlFWI78PQt8bP92GOxtIx6/TDRX5ZIkRbkxcs0D6VQDjbHCxm6QbT3iaJ3CUj9PxAnPGDQRZHa8WR5gcNifBq6cp/+w8YBFttf9CyA5o3ptlGPstSHk/OyIXQb1hTGIEZ731WZHJHRp4i2evWFlYhB4M9ZtP1NPOSVvJZqKWLHV3LHo89qMuhml0sRzZYzGYeGltZWeN0qMXR6VfpDbz0yExk7ODHO09ZCP3csvyp4DHAjzVu65gFhqnJrR1ahUyMHMakT8ASKZ6eHZ8uKqhsxwHsdqjtjnYKuPZT8FzoRW43yzIHcLh4KxUPJG7DEwxeAboESRlPeMgkzk8rv2QWEMsnXno/8BO5eZg1QRe2IajkEpTNPtam+bUtU3y+AZPbH6EIi2Po43V3Lqmy5LBUzFdyt6nZjOz+sjeUvbkk5eID6x6nHNBHKFYyhaq7kxQ=
   distributions: "sdist bdist_wheel"
   on:
-    tags: true
-    all_branches: true
+    branch: master
