@@ -1,0 +1,22 @@
+language: python
+python:
+  - "3.8"
+
+# Install dependencies
+install:
+  - pip install -r requirements.txt
+  - pip install twine
+
+# Run tests
+script:
+  - python -m unittest discover tests
+
+# Deploy to PyPI
+deploy:
+  provider: pypi
+  username: "__token__"
+  password: "pypi-AgEIcHlwaS5vcmcCJGEzYmM2OGIyLTE5ODEtNDdlMy05YmMxLTgxYTg2NGZlYTgzYgACIlsxLFsibXlpbnRlcm5zaGlwY2FsY3VsYXRvcjIwMjQiXV0AAixbMixbImZhYTk1MDlmLThjMTAtNDQ3Yy04ZWY0LWJjZTc5Y2M2MWYyZiJdXQAABiAoCo112uzwKdBgCt8Wx5tJQT092izWPjKZ1n8HzaKVIg"
+  distributions: "sdist bdist_wheel"
+  on:
+    tags: true
+    branch: main
