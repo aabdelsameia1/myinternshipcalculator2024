@@ -8,8 +8,8 @@ setup(
     author='Abdallah Abdelsameia',
     author_email='aabdelsameia1@gmail.com',
     description='A simple internship hours calculator.',
-    long_description=open('README.md').read(),
-    long_description_content_type='text/markdown',
+    # long_description=open('README.md').read(),
+    # long_description_content_type='text/markdown',
     url='https://github.com/aabdelsameia1/myinternshipcalculator2024',
     classifiers=[
         'Programming Language :: Python :: 3',

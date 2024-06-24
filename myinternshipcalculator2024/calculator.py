@@ -1,3 +1,5 @@
+import statsmodels.api as sm
+
 def calculate_weekly_hours(daily_hours):
     """
     Calculate total weekly hours based on daily hours.
