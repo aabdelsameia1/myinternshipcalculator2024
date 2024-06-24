@@ -1,10 +1,12 @@
+from setuptools import setup, find_packages
+
 # Read the long description from your README.md file
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
     name='myinternshipcalculator2024',
-    version='0.3.1',
+    version='0.3.2',
     packages=find_packages(),
     install_requires=[],
     author='Abdallah Abdelsameia',
