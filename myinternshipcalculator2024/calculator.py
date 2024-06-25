@@ -14,9 +14,9 @@ def calculate_weekly_hours(daily_hours):
 def calculate_monthly_hours(weekly_hours):
     """
     Calculate total monthly hours based on weekly hours.
-    Assumes a 4-week month.
+    Assumes a 5-week month.
 
     :param weekly_hours: Number of hours worked per week
     :return: Total monthly hours
     """
-    return weekly_hours * 4
+    return weekly_hours * 5
