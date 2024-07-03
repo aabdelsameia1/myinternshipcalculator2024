@@ -1,3 +1,5 @@
-statsmodels~=0.14.2
-rpy2~=3.5.16
-setuptools~=69.5.1
+setuptools
+scipy
+plotly
+scikit-learn
+statsmodels
