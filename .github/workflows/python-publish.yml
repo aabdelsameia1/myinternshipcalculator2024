@@ -30,7 +30,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v3
       with:
-        python-version: '3.x'
+        python-version: '3.11.9'
 
     # Debug step to list all files in the working directory
     - name: Debug - List files in working directory
