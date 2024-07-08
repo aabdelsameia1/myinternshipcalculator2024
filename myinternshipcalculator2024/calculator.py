@@ -5,7 +5,7 @@ import sklearn.linear_model as lm
 
 def calculate_weekly_hours(daily_hours):
     """
-    Calculateee total weekly hours based on daily hours.
+    Calculates total weekly hours based on daily hours.
     Assumes a 5-day work week.
 
     :param daily_hours: Number of hours worked per day
@@ -15,7 +15,7 @@ def calculate_weekly_hours(daily_hours):
 
 def calculate_monthly_hours(weekly_hours):
     """
-    Calculate total monthly hours based on weekly hours.
+    Calculates total monthly hours based on weekly hours.
     Assumes a 5-week month.
 
     :param weekly_hours: Number of hours worked per week
