@@ -58,10 +58,10 @@ jobs:
       if: success()
       run: python -m build
 
-    - name: Install documentation dependencies
-      run: |
-#        python -m pip install -r requirements-docs.txt  # Install documentation dependencies
-        python -m pip install sphinx sphinx-rtd-theme
+#    - name: Install documentation dependencies
+#      run: |
+##        python -m pip install -r requirements-docs.txt  # Install documentation dependencies
+#        python -m pip install sphinx sphinx-rtd-theme
 
     - name: Build documentation
       run: |
