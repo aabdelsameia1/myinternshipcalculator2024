@@ -53,25 +53,9 @@ jobs:
     - name: Run tests
       run: pytest tests/
 
-
     - name: Build package
       if: success()
       run: python -m build
-
-#    - name: Install documentation dependencies
-#      run: |
-##        python -m pip install -r requirements-docs.txt  # Install documentation dependencies
-#        python -m pip install sphinx sphinx-rtd-theme
-
-    - name: Build documentation
-      run: |
-        cd docs
-        make html  # Adjust if your documentation build command is different
-
-
-    # Sync with Read the Docs
-    - name: Sync with Read the Docs
-      run: curl -X POST -d "token=${{ secrets.READTHEDOCS_TOKEN }}" https://readthedocs.org/api/v2/webhook/myinternshipcalculator2024/272555/
 
 #    - name: Publish package
 #      if: success()
