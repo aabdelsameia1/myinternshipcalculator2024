@@ -14,7 +14,7 @@ def main():
 
     setup(
         name='myinternshipcalculator2024',
-        version='0.3.5',
+        version='0.3.6',
         author='Abdallah Abdelsameia',
         author_email='aabdelsameia1@gmail.com',
         maintainer="Abdallah Abdelsameia",

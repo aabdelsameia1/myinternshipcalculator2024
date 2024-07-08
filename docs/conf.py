@@ -14,7 +14,7 @@ sys.path.insert(0, os.path.abspath(".."))
 project = 'My Internship Calculator Documentation'
 copyright = '2024, Abdallah Abdelsameia'
 author = 'Abdallah Abdelsameia'
-release = '0.2.5'
+release = '0.3.6'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -38,4 +38,4 @@ html_static_path = ['_static']
 
 
 # PDF
-pdf_documents = [('index', u'My Internship Calculator Documentation', u'Abdallah Abdelsameia')]
+# pdf_documents = [('index', u'My Internship Calculator Documentation', u'Abdallah Abdelsameia')]

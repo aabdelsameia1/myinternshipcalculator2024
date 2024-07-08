@@ -5,6 +5,7 @@ import sklearn.linear_model as lm
 
 def calculate_weekly_hours(daily_hours):
     """
+    version 0.3.6
     Calculates total weekly hours based on daily hours.
     Assumes a 5-day work week.
 
