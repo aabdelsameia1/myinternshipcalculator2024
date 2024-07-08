@@ -14,7 +14,7 @@ sys.path.insert(0, os.path.abspath(".."))
 project = 'My Internship Calculator Documentation'
 copyright = '2024, Abdallah Abdelsameia'
 author = 'Abdallah Abdelsameia'
-release = '0.3.7'
+release = '0.3.8'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
