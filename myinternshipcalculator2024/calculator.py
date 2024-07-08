@@ -25,7 +25,7 @@ def calculate_monthly_hours(weekly_hours):
 
 def perform_ttest(data1, data2):
     """
-    Perform an independent T-test on two datasets.
+    Performs an independent T-test on two datasets.
 
     :param data1: First dataset
     :param data2: Second dataset
